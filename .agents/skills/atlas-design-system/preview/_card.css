@@ -1,0 +1,77 @@
+/* Shared base for all design-system preview cards · v2 */
+@import url('../colors_and_type.css');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--white);
+  color: var(--fg-1);
+  font-family: var(--font-sans);
+}
+
+.card {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.swatch {
+  flex: 1;
+  border-radius: 6px;
+  border: 1px solid var(--border-hairline);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+.swatch .name {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.swatch .hex {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.tag {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cyan-600);
+  font-weight: 600;
+}
+
+.tag-spec {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--fg-3);
+}
+
+.divider {
+  height: 1px;
+  background: var(--border-soft);
+}

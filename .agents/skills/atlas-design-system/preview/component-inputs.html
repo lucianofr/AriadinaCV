@@ -1,0 +1,57 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Form inputs</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .field { display:flex; flex-direction:column; gap:6px; flex:1; }
+  .field label { font-family:var(--font-sans); font-size:12px; font-weight:600; color:var(--fg-2); }
+  .field input, .field select, .field textarea {
+    font-family:var(--font-sans); font-size:14px; padding:11px 14px;
+    border:1px solid var(--slate-200); border-radius:8px; background:#FFF; color:var(--fg-1);
+    outline:none; transition: border-color 160ms, box-shadow 160ms;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    border-color:var(--cyan-500); box-shadow:0 0 0 3px rgba(63, 184, 214, 0.32);
+  }
+  .field-hint { font-size:12px; color:var(--fg-3); }
+  .field-error input { border-color:var(--danger); }
+  .field-error .field-hint { color:var(--danger); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label-row">
+    <span class="tag">Form inputs · radius 8</span>
+    <span class="tag-spec">focus-ring cyan · 3px alpha 32%</span>
+  </div>
+  <div style="display:flex; gap:16px;">
+    <div class="field">
+      <label>Nome</label>
+      <input type="text" placeholder="Como deseja ser tratado">
+    </div>
+    <div class="field">
+      <label>E-mail</label>
+      <input type="email" value="contato@" style="border-color:var(--cyan-500); box-shadow:0 0 0 3px rgba(63, 184, 214, 0.32);">
+    </div>
+  </div>
+  <div style="display:flex; gap:16px;">
+    <div class="field">
+      <label>Organização</label>
+      <select><option>Governo</option><option>Setor privado</option><option>Outro</option></select>
+    </div>
+    <div class="field field-error">
+      <label>Telefone</label>
+      <input type="tel" value="+55 27 9">
+      <span class="field-hint">Formato inválido.</span>
+    </div>
+  </div>
+  <div class="field">
+    <label>Mensagem</label>
+    <textarea rows="2" placeholder="Conte brevemente o desafio."></textarea>
+  </div>
+</div>
+</body>
+</html>

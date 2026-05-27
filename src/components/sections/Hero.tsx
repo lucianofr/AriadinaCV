@@ -30,7 +30,7 @@ export function Hero() {
       id="hero"
       style={{
         minHeight: '100svh',
-        background: `linear-gradient(140deg, #0d2240 0%, var(--color-primary) 40%, #1e4f7a 70%, #163352 100%)`,
+        background: `linear-gradient(135deg, #081a33 0%, var(--color-primary) 45%, var(--color-primary-light) 100%)`,
         position: 'relative',
         display: 'flex',
         flexDirection: 'column',
@@ -56,7 +56,7 @@ export function Hero() {
           position: 'absolute', bottom: '5%', left: '-10%',
           width: 'clamp(250px, 30vw, 420px)', height: 'clamp(250px, 30vw, 420px)',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(46,134,171,0.1) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(63,184,214,0.1) 0%, transparent 70%)',
         }} />
         {/* Subtle horizontal rule */}
         <div style={{
@@ -232,8 +232,8 @@ export function Hero() {
                 width: '100%',
                 maxWidth: '460px',
                 borderRadius: '20px',
-                border: '1px solid rgba(46,134,171,0.25)',
-                boxShadow: '0 20px 60px rgba(0,0,0,0.35), 0 0 40px rgba(46,134,171,0.12)',
+                border: '1px solid rgba(63,184,214,0.25)',
+                boxShadow: '0 20px 60px rgba(0,0,0,0.35), 0 0 40px rgba(63,184,214,0.12)',
                 display: 'block',
               }}
             />
@@ -275,10 +275,10 @@ export function Hero() {
               transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
               style={{
                 position: 'absolute', bottom: '14%', right: '1%',
-                background: 'rgba(46,134,171,0.18)',
+                background: 'rgba(63,184,214,0.18)',
                 backdropFilter: 'blur(14px)',
                 WebkitBackdropFilter: 'blur(14px)',
-                border: '1px solid rgba(46,134,171,0.38)',
+                border: '1px solid rgba(63,184,214,0.38)',
                 borderRadius: '14px',
                 padding: '0.9rem 1.35rem',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.2)',

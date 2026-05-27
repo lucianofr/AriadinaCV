@@ -148,7 +148,7 @@ export function Contact() {
                     width: '40px',
                     height: '40px',
                     borderRadius: '10px',
-                    background: 'rgba(46,134,171,0.2)',
+                    background: 'rgba(63,184,214,0.2)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',

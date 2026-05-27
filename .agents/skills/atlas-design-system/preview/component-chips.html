@@ -1,0 +1,45 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Skill chips</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .chip { display:inline-flex; align-items:center; gap:6px; padding:7px 14px; border-radius:999px; font-family:var(--font-sans); font-size:13px; font-weight:500; }
+  .chip--active { background:var(--blue-700); color:#FFF; box-shadow: 0 2px 6px rgba(37, 99, 235, 0.24); }
+  .chip--soft { background:var(--blue-100); color:var(--blue-800); }
+  .chip--outline { background:transparent; border:1px solid var(--slate-300); color:var(--fg-2); }
+  .group-title { font-family:var(--font-sans); font-size:11px; font-weight:700; color:var(--navy-800); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:8px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label-row">
+    <span class="tag">Skill chips · pílulas</span>
+    <span class="tag-spec">3 variantes · pill · soft · outline</span>
+  </div>
+  <div>
+    <div class="group-title">Gestão de Projetos</div>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <span class="chip chip--active">PMO</span>
+      <span class="chip chip--soft">Planejamento estratégico</span>
+      <span class="chip chip--soft">Gestão de escopo</span>
+      <span class="chip chip--soft">Gestão de prazos</span>
+      <span class="chip chip--soft">Monitoramento</span>
+      <span class="chip chip--soft">Riscos</span>
+    </div>
+  </div>
+  <div>
+    <div class="group-title">Governança &amp; Processos</div>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <span class="chip chip--soft">BID</span>
+      <span class="chip chip--soft">Aquisições</span>
+      <span class="chip chip--soft">Reporte executivo</span>
+      <span class="chip chip--outline">Melhoria contínua</span>
+      <span class="chip chip--outline">Compliance</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

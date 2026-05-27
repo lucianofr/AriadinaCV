@@ -49,12 +49,12 @@ export function Education() {
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLDivElement).style.boxShadow =
-                  '0 6px 20px rgba(27,58,92,0.1)';
+                  '0 6px 20px rgba(13,39,71,0.1)';
                 (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
                 (e.currentTarget as HTMLDivElement).style.boxShadow =
-                  '0 1px 4px rgba(27,58,92,0.04)';
+                  '0 1px 4px rgba(13,39,71,0.04)';
                 (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
               }}
             >
@@ -63,7 +63,7 @@ export function Education() {
                   width: '40px',
                   height: '40px',
                   borderRadius: '10px',
-                  background: 'rgba(46,134,171,0.1)',
+                  background: 'rgba(63,184,214,0.1)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',

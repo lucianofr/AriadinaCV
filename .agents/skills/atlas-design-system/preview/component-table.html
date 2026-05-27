@@ -1,0 +1,51 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Report table</title>
+<link rel="stylesheet" href="_card.css">
+</head>
+<body>
+<div class="card">
+  <div class="label-row">
+    <span class="tag">Tabela · relatório executivo</span>
+    <span class="tag-spec">mono nums · linhas slate-200</span>
+  </div>
+  <table style="width:100%; border-collapse:collapse; font-family:var(--font-sans); font-size:13px;">
+    <thead>
+      <tr style="text-align:left; color:var(--fg-3); font-size:11px; text-transform:uppercase; letter-spacing:0.1em; border-bottom:2px solid var(--navy-800); font-weight:600;">
+        <th style="padding:10px 8px;">Indicador</th>
+        <th style="padding:10px 8px; text-align:right;">Baseline</th>
+        <th style="padding:10px 8px; text-align:right;">Atual</th>
+        <th style="padding:10px 8px; text-align:right;">Δ</th>
+        <th style="padding:10px 8px;">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid var(--slate-100);">
+        <td style="padding:12px 8px;">Tempo médio de contratação</td>
+        <td style="padding:12px 8px; text-align:right; font-family:var(--font-mono);">186 d</td>
+        <td style="padding:12px 8px; text-align:right; font-family:var(--font-mono);">142 d</td>
+        <td style="padding:12px 8px; text-align:right; font-family:var(--font-mono); color:var(--success);">−23,6%</td>
+        <td style="padding:12px 8px;"><span style="display:inline-flex; align-items:center; gap:6px; padding:3px 9px; border-radius:999px; background:#DCFCE7; color:#15803D; font-size:11px; font-weight:600;"><span style="width:6px; height:6px; border-radius:50%; background:#16A34A;"></span>No alvo</span></td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--slate-100);">
+        <td style="padding:12px 8px;">Aderência ao planejamento</td>
+        <td style="padding:12px 8px; text-align:right; font-family:var(--font-mono);">68%</td>
+        <td style="padding:12px 8px; text-align:right; font-family:var(--font-mono);">82%</td>
+        <td style="padding:12px 8px; text-align:right; font-family:var(--font-mono); color:var(--success);">+14 pp</td>
+        <td style="padding:12px 8px;"><span style="display:inline-flex; align-items:center; gap:6px; padding:3px 9px; border-radius:999px; background:#DCFCE7; color:#15803D; font-size:11px; font-weight:600;"><span style="width:6px; height:6px; border-radius:50%; background:#16A34A;"></span>No alvo</span></td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--slate-100);">
+        <td style="padding:12px 8px;">Execução orçamentária</td>
+        <td style="padding:12px 8px; text-align:right; font-family:var(--font-mono);">71%</td>
+        <td style="padding:12px 8px; text-align:right; font-family:var(--font-mono);">64%</td>
+        <td style="padding:12px 8px; text-align:right; font-family:var(--font-mono); color:var(--danger);">−7 pp</td>
+        <td style="padding:12px 8px;"><span style="display:inline-flex; align-items:center; gap:6px; padding:3px 9px; border-radius:999px; background:#FEE2E2; color:#B91C1C; font-size:11px; font-weight:600;"><span style="width:6px; height:6px; border-radius:50%; background:#DC2626;"></span>Em risco</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

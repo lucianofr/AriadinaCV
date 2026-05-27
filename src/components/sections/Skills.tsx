@@ -71,9 +71,9 @@ export function Skills() {
                 transition={{ duration: 0.45, delay: i * 0.1 }}
                 style={{
                   background: group.accent
-                    ? 'linear-gradient(135deg, rgba(27,58,92,0.04) 0%, rgba(46,134,171,0.06) 100%)'
+                    ? 'linear-gradient(135deg, rgba(13,39,71,0.04) 0%, rgba(63,184,214,0.06) 100%)'
                     : 'transparent',
-                  border: group.accent ? '1px solid rgba(46,134,171,0.18)' : '1px solid transparent',
+                  border: group.accent ? '1px solid rgba(63,184,214,0.18)' : '1px solid transparent',
                   borderRadius: '14px',
                   padding: group.accent ? '1.25rem' : '0',
                 }}
@@ -85,7 +85,7 @@ export function Skills() {
                 }}>
                   <div style={{
                     width: '28px', height: '28px', borderRadius: '7px', flexShrink: 0,
-                    background: group.accent ? 'rgba(46,134,171,0.15)' : 'rgba(27,58,92,0.07)',
+                    background: group.accent ? 'rgba(63,184,214,0.15)' : 'rgba(13,39,71,0.07)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                   }}>
                     <Icon

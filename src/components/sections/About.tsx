@@ -4,12 +4,12 @@ import { SectionTitle } from '../ui/SectionTitle';
 import { useTranslation } from '../../i18n/useTranslation';
 
 const pillars = [
-  { Icon: Building2, label: 'PMO', color: '#2E86AB' },
-  { Icon: GitBranch, label: 'BPM', color: '#2E86AB' },
-  { Icon: RefreshCw, label: 'Scrum', color: '#2E86AB' },
-  { Icon: Lightbulb, label: 'Design Thinking', color: '#2E86AB' },
-  { Icon: Target, label: 'Planejamento Estratégico', color: '#2E86AB' },
-  { Icon: Globe, label: 'BID / IDB', color: '#2E86AB' },
+  { Icon: Building2, label: 'PMO', color: '#3FB8D6' },
+  { Icon: GitBranch, label: 'BPM', color: '#3FB8D6' },
+  { Icon: RefreshCw, label: 'Scrum', color: '#3FB8D6' },
+  { Icon: Lightbulb, label: 'Design Thinking', color: '#3FB8D6' },
+  { Icon: Target, label: 'Planejamento Estratégico', color: '#3FB8D6' },
+  { Icon: Globe, label: 'BID / IDB', color: '#3FB8D6' },
 ];
 
 function MonogramBadge() {
@@ -23,16 +23,16 @@ function MonogramBadge() {
     >
       <defs>
         <radialGradient id="badgeBg" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#1B3A5C" stopOpacity="0.08" />
-          <stop offset="100%" stopColor="#1B3A5C" stopOpacity="0.03" />
+          <stop offset="0%" stopColor="#0D2747" stopOpacity="0.08" />
+          <stop offset="100%" stopColor="#0D2747" stopOpacity="0.03" />
         </radialGradient>
       </defs>
       {/* Outer dashed ring */}
-      <circle cx="90" cy="90" r="84" stroke="#1B3A5C" strokeWidth="1" strokeDasharray="5 5" strokeOpacity="0.2" />
+      <circle cx="90" cy="90" r="84" stroke="#0D2747" strokeWidth="1" strokeDasharray="5 5" strokeOpacity="0.2" />
       {/* Middle solid ring */}
-      <circle cx="90" cy="90" r="70" stroke="#2E86AB" strokeWidth="1.5" strokeOpacity="0.35" fill="url(#badgeBg)" />
+      <circle cx="90" cy="90" r="70" stroke="#3FB8D6" strokeWidth="1.5" strokeOpacity="0.35" fill="url(#badgeBg)" />
       {/* Inner accent ring */}
-      <circle cx="90" cy="90" r="54" stroke="#2E86AB" strokeWidth="1" strokeOpacity="0.2" fill="none" />
+      <circle cx="90" cy="90" r="54" stroke="#3FB8D6" strokeWidth="1" strokeOpacity="0.2" fill="none" />
       {/* Decorative dots at cardinal positions */}
       {[0, 90, 180, 270].map((deg) => {
         const rad = (deg * Math.PI) / 180;
@@ -42,7 +42,7 @@ function MonogramBadge() {
             cx={90 + 70 * Math.cos(rad)}
             cy={90 - 70 * Math.sin(rad)}
             r="3"
-            fill="#2E86AB"
+            fill="#3FB8D6"
             fillOpacity="0.5"
           />
         );
@@ -54,7 +54,7 @@ function MonogramBadge() {
         fontFamily="var(--font-display)"
         fontSize="26"
         fontWeight="700"
-        fill="#1B3A5C"
+        fill="#0D2747"
         fillOpacity="0.82"
         letterSpacing="4"
       >
@@ -66,7 +66,7 @@ function MonogramBadge() {
         fontFamily="var(--font-sans)"
         fontSize="7.5"
         fontWeight="500"
-        fill="#2E86AB"
+        fill="#3FB8D6"
         fillOpacity="0.75"
         letterSpacing="2.5"
       >
@@ -164,7 +164,7 @@ export function About() {
                 fontSize: 'clamp(0.93rem, 1.4vw, 1.02rem)',
                 color: 'var(--color-text)',
                 lineHeight: 1.82,
-                margin: 0,
+                margin: '1.5rem 0 0 0',
               }}
             >
               {t.about.paragraph2}
@@ -198,26 +198,26 @@ export function About() {
                   display: 'flex',
                   alignItems: 'center',
                   gap: '0.75rem',
-                  boxShadow: '0 1px 4px rgba(27,58,92,0.04)',
+                  boxShadow: '0 1px 4px rgba(13,39,71,0.04)',
                   transition: 'box-shadow 0.2s, transform 0.2s, border-color 0.2s',
                   cursor: 'default',
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLDivElement;
-                  el.style.boxShadow = '0 6px 24px rgba(27,58,92,0.1)';
+                  el.style.boxShadow = '0 6px 24px rgba(13,39,71,0.1)';
                   el.style.transform = 'translateY(-3px)';
-                  el.style.borderColor = 'rgba(46,134,171,0.35)';
+                  el.style.borderColor = 'rgba(63,184,214,0.35)';
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget as HTMLDivElement;
-                  el.style.boxShadow = '0 1px 4px rgba(27,58,92,0.04)';
+                  el.style.boxShadow = '0 1px 4px rgba(13,39,71,0.04)';
                   el.style.transform = 'translateY(0)';
                   el.style.borderColor = 'var(--color-border)';
                 }}
               >
                 <div style={{
                   width: '36px', height: '36px', borderRadius: '9px', flexShrink: 0,
-                  background: 'rgba(46,134,171,0.1)',
+                  background: 'rgba(63,184,214,0.1)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                 }}>
                   <p.Icon size={17} color="var(--color-accent)" strokeWidth={1.8} />

@@ -1,0 +1,45 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Status badges</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .badge { display:inline-flex; align-items:center; gap:6px; padding:5px 11px; border-radius:999px; font-family:var(--font-sans); font-size:11px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; }
+  .badge__dot { width:6px; height:6px; border-radius:50%; }
+  .b-exec { background:#DCFCE7; color:#15803D; }
+  .b-exec .badge__dot { background:#16A34A; }
+  .b-done { background:var(--navy-050); color:var(--navy-700); }
+  .b-done .badge__dot { background:var(--navy-700); }
+  .b-risk { background:#FEE2E2; color:#B91C1C; }
+  .b-risk .badge__dot { background:#DC2626; }
+  .b-plan { background:#FEF3C7; color:#92400E; }
+  .b-plan .badge__dot { background:#D97706; }
+  .b-cyan { background:var(--cyan-100); color:var(--cyan-700); }
+  .b-cyan .badge__dot { background:var(--cyan-500); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label-row">
+    <span class="tag">Badges · status</span>
+    <span class="tag-spec">pill · 11px · 600</span>
+  </div>
+  <div style="display:flex; gap:8px; flex-wrap:wrap;">
+    <span class="badge b-exec"><span class="badge__dot"></span>Em execução</span>
+    <span class="badge b-done"><span class="badge__dot"></span>Concluído</span>
+    <span class="badge b-risk"><span class="badge__dot"></span>Em risco</span>
+    <span class="badge b-plan"><span class="badge__dot"></span>Em planejamento</span>
+    <span class="badge b-cyan"><span class="badge__dot"></span>Novo</span>
+  </div>
+  <div style="display:flex; gap:8px; flex-wrap:wrap;">
+    <span class="badge" style="background:var(--navy-800); color:#FFF;">BID</span>
+    <span class="badge" style="background:var(--cyan-500); color:var(--navy-900);">PMO</span>
+    <span class="badge" style="background:transparent; border:1px solid var(--slate-300); color:var(--fg-2);">Governo do ES</span>
+    <span class="badge" style="background:transparent; border:1px solid var(--slate-300); color:var(--fg-2);">TCE-ES</span>
+    <span class="badge" style="background:transparent; border:1px solid var(--slate-300); color:var(--fg-2);">R$ 600 mi</span>
+  </div>
+</div>
+</body>
+</html>
