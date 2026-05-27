@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Mail, ChevronDown } from 'lucide-react';
+import { MapPin, Mail, ChevronDown, FileDown } from 'lucide-react';
 import { useTranslation } from '../../i18n/useTranslation';
 import { resume } from '../../data/resume';
 import heroImage from '../../assets/hero-illustration.png';
@@ -165,6 +165,29 @@ export function Hero() {
               >
                 <LinkedinIcon size={16} />
                 {t.hero.cta_linkedin}
+              </a>
+
+              <a
+                href="/Profile.pdf"
+                download="Curriculum_Ariadina_Astori_Porto.pdf"
+                style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+                  background: 'rgba(255,255,255,0.09)', border: '1px solid rgba(255,255,255,0.18)',
+                  color: '#ffffff', fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: '0.9rem',
+                  padding: '0.72rem 1.6rem', borderRadius: '8px', textDecoration: 'none',
+                  transition: 'background 0.2s, transform 0.15s', letterSpacing: '0.01em',
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.15)';
+                  (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.09)';
+                  (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(0)';
+                }}
+              >
+                <FileDown size={16} />
+                {t.hero.download_cv}
               </a>
             </div>
 
