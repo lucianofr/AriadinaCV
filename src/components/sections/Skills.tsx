@@ -83,6 +83,7 @@ export function Skills() {
                   border: group.accent ? '1px solid rgba(63,184,214,0.18)' : '1px solid transparent',
                   borderRadius: '14px',
                   padding: group.accent ? '1.25rem' : '0',
+                  gridColumn: group.key === 'tools' ? '1 / -1' : 'auto',
                 }}
               >
                 {/* Category header */}
