@@ -18,7 +18,8 @@ export function SkillBadge({ label, variant = 'default' }: SkillBadgeProps) {
         backgroundColor: isAccent ? 'var(--color-accent)' : 'var(--color-bg-alt)',
         color: isAccent ? '#ffffff' : 'var(--color-primary)',
         border: isAccent ? 'none' : '1px solid var(--color-border)',
-        whiteSpace: 'nowrap' as const,
+        whiteSpace: 'normal' as const,
+        lineHeight: 1.35,
         transition: 'background-color 0.2s, color 0.2s',
       }}
     >
