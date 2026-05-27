@@ -18,6 +18,8 @@ export function Navbar() {
     { href: '#sobre', label: t.nav.about },
     { href: '#experiencia', label: t.nav.experience },
     { href: '#formacao', label: t.nav.education },
+    { href: '#cursos', label: t.nav.courses },
+    { href: '#seminarios', label: t.nav.seminars },
     { href: '#habilidades', label: t.nav.skills },
     { href: '#contato', label: t.nav.contact },
   ];

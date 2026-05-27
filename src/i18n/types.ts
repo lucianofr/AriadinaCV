@@ -5,6 +5,8 @@ export interface Translations {
     about: string;
     experience: string;
     education: string;
+    courses: string;
+    seminars: string;
     skills: string;
     contact: string;
   };
@@ -24,6 +26,8 @@ export interface Translations {
     about: string;
     experience: string;
     education: string;
+    courses: string;
+    seminars: string;
     skills: string;
     contact: string;
   };

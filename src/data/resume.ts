@@ -19,6 +19,19 @@ export interface EducationItem {
   period: string;
 }
 
+export interface CourseItem {
+  name: string;
+  provider: string;
+  period: string;
+}
+
+export interface SeminarItem {
+  name: string;
+  event: string;
+  location: string;
+  period: string;
+}
+
 
 export const resume = {
   name: 'Ariadina Astori Porto',
@@ -188,6 +201,170 @@ export const resume = {
       period: '2006 – 2010',
     },
   ] satisfies EducationItem[],
+
+  courses: [
+    {
+      name: 'Pacote Office Avançado',
+      provider: '',
+      period: '',
+    },
+    {
+      name: 'Formação de Agentes de Contratação e Equipe de Apoio – Lei Federal 14.133',
+      provider: 'Governo do Estado',
+      period: 'Fev 2024',
+    },
+    {
+      name: 'Programa HubGov – Espírito Santo – Design Thinking',
+      provider: 'HubGov',
+      period: 'Jun 2019 – Set 2019',
+    },
+    {
+      name: 'BPM (Gerenciamento de Processos), Transformação Digital e Lean Thinking: Perspectivas e Oportunidades',
+      provider: 'UFES',
+      period: 'Mai 2019',
+    },
+    {
+      name: 'Governança de Atividades Operacionais',
+      provider: 'UFES',
+      period: 'Mai 2019',
+    },
+    {
+      name: 'Elaboração do PPA: Parte Teórica',
+      provider: 'ESESP',
+      period: 'Jul 2019',
+    },
+    {
+      name: 'PITCH: Vantagens da Comunicação Simplificada',
+      provider: 'ESESP',
+      period: 'Abr 2019',
+    },
+    {
+      name: 'SCRUM – Método Ágil de Processos',
+      provider: 'ESESP',
+      period: 'Nov 2018',
+    },
+    {
+      name: 'MEETUP.GOV – Futurismo',
+      provider: 'ESESP',
+      period: 'Dez 2018',
+    },
+    {
+      name: 'Oratória – A Arte de Falar e Convencer em Público – Módulo I e II',
+      provider: 'Tribunal de Contas',
+      period: 'Nov 2017',
+    },
+    {
+      name: 'Gestão Estratégica e Novas Técnicas de Planejamento Orçamentário',
+      provider: 'DVW Networking – São Paulo',
+      period: 'Nov 2016',
+    },
+    {
+      name: 'Excelência de Atendimento ao Público',
+      provider: 'Samarco',
+      period: 'Abr 2016',
+    },
+    {
+      name: 'Treinamento SAP – Módulo DMS',
+      provider: 'Megawork / Samarco',
+      period: 'Nov 2015',
+    },
+    {
+      name: 'Workshop com Ricardo Vargas: Uncertainty Cycle',
+      provider: 'PMI – Project Management Institute',
+      period: 'Nov 2023',
+    },
+    {
+      name: 'Workshop – Gamification Experience: Como Engajar Pessoas com Elementos de Jogos',
+      provider: 'PMI – Project Management Institute',
+      period: 'Nov 2019',
+    },
+    {
+      name: 'Workshop – Liderando Times Híbridos: A Construção de Resultados Consistentes',
+      provider: 'PMI – Project Management Institute',
+      period: 'Nov 2019',
+    },
+    {
+      name: 'Workshop – Lego Scrum Game',
+      provider: 'PMI – Project Management Institute',
+      period: 'Nov 2018',
+    },
+    {
+      name: 'Workshop de Gestão Ágil com Office 365',
+      provider: 'PMI – Project Management Institute',
+      period: 'Nov 2018',
+    },
+    {
+      name: 'Workshop – Alinhamento Estratégico de Projetos – Aplicação do Modelo PSCanvas',
+      provider: 'PMI – Project Management Institute',
+      period: 'Jun 2017',
+    },
+    {
+      name: 'Workshop – Metodologia Híbrida de Gerenciamento de Projetos com Marsal Melo',
+      provider: 'PMI – Project Management Institute',
+      period: 'Jun 2017',
+    },
+    {
+      name: 'Workshop – Gestão de Mudanças Organizacionais com Pedro Barbosa',
+      provider: 'PMI – Project Management Institute',
+      period: 'Jun 2017',
+    },
+    {
+      name: 'Workshop de Modelagem de Processos',
+      provider: 'UFES',
+      period: 'Abr 2017',
+    },
+  ] satisfies CourseItem[],
+
+  seminars: [
+    {
+      name: 'Dia das Operações Brasil 2023: Planejamento e Riscos de Forma Prática nos Projetos',
+      event: 'Dia das Operações Brasil 2023',
+      location: 'BID – Banco Interamericano de Desenvolvimento',
+      period: 'Nov 2023',
+    },
+    {
+      name: '18º SCGP – Seminário Capixaba de Gestão de Projetos',
+      event: '18º Seminário Capixaba de Gestão de Projetos',
+      location: 'Vitória – ES',
+      period: 'Out 2023',
+    },
+    {
+      name: '13ª Semana da Segurança Cidadã e Justiça',
+      event: '13ª Semana da Segurança Cidadã e Justiça',
+      location: 'Salvador – BA',
+      period: 'Set 2023',
+    },
+    {
+      name: '5ª Semana de Inovação: Governo para as Pessoas',
+      event: '5ª Semana de Inovação',
+      location: 'Brasília – DF',
+      period: 'Nov 2019',
+    },
+    {
+      name: 'II Fórum Brasil GRC – Governança, Riscos e Compliance',
+      event: 'II Fórum Brasil GRC',
+      location: 'Vitória – ES',
+      period: 'Abr 2019',
+    },
+    {
+      name: 'BPM Day – Business Process Management 2019',
+      event: 'BPM Day 2019',
+      location: 'Vitória – ES',
+      period: 'Abr 2019',
+    },
+    {
+      name: 'XII Congresso Brasileiro de Gestão, Projetos e Liderança',
+      event: 'XII Congresso Brasileiro de Gestão, Projetos e Liderança',
+      location: 'Curitiba – PR',
+      period: 'Jun 2017',
+    },
+    {
+      name: '14º Seminário Capixaba de Gerenciamento de Projetos',
+      event: '14º Seminário Capixaba de Gerenciamento de Projetos',
+      location: 'Vitória – ES',
+      period: 'Set 2018',
+    },
+  ] satisfies SeminarItem[],
 
   skills: {
     project_management: [
