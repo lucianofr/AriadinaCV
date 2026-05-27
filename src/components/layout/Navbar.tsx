@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from '../ui/LanguageSwitcher';
 import { useTranslation } from '../../i18n/useTranslation';
-import { resume } from '../../data/resume';
 
 export function Navbar() {
   const t = useTranslation();
@@ -61,20 +60,27 @@ export function Navbar() {
           <a
             href="#hero"
             style={{
-              fontFamily: 'var(--font-display)',
-              fontWeight: 800,
-              fontSize: '1rem',
-              color: scrolled ? 'var(--color-primary)' : '#ffffff',
+              display: 'flex',
+              alignItems: 'center',
               textDecoration: 'none',
-              letterSpacing: '-0.02em',
-              transition: 'color 0.3s',
+              transition: 'opacity 0.2s',
               flexShrink: 0,
             }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.opacity = '0.85';
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.opacity = '1';
+            }}
           >
-            {resume.name.split(' ').slice(0, 1)[0]}{' '}
-            <span style={{ fontWeight: 400 }}>
-              {resume.name.split(' ').slice(1).join(' ')}
-            </span>
+            <img
+              src={scrolled ? '/logo-aap.svg' : '/logo-aap-inverse.svg'}
+              alt="Ariadina Astori Porto — Logo"
+              style={{
+                height: '30px',
+                display: 'block',
+              }}
+            />
           </a>
 
           {/* Desktop nav */}

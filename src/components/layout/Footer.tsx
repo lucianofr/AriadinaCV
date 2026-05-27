@@ -34,17 +34,15 @@ export function Footer() {
         }}
       >
         <div>
-          <p
+          <img
+            src="/logo-aap-inverse.svg"
+            alt={resume.name}
             style={{
-              fontFamily: 'var(--font-display)',
-              fontWeight: 700,
-              fontSize: '0.95rem',
-              color: '#ffffff',
-              margin: '0 0 0.25rem 0',
+              height: '26px',
+              display: 'block',
+              marginBottom: '0.35rem',
             }}
-          >
-            {resume.name}
-          </p>
+          />
           <p
             style={{
               fontFamily: 'var(--font-sans)',
