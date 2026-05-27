@@ -37,6 +37,7 @@ export interface Translations {
   skills: {
     project_management: string;
     governance: string;
+    monitoring: string;
     methodologies: string;
     tools: string;
     languages: string;

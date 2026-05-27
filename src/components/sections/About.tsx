@@ -12,67 +12,45 @@ const pillars = [
   { Icon: Globe, label: 'BID / IDB', color: '#3FB8D6' },
 ];
 
-function MonogramBadge() {
+function LogoMarkBadge() {
   return (
-    <svg
-      viewBox="0 0 180 180"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      style={{ width: '100%', maxWidth: '180px', display: 'block' }}
-      aria-hidden="true"
+    <div
+      style={{
+        width: '110px',
+        height: '110px',
+        borderRadius: '24px',
+        background: '#ffffff',
+        border: '1px solid var(--color-border)',
+        boxShadow: '0 8px 32px rgba(13,39,71,0.05)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '1.25rem',
+        flexShrink: 0,
+        position: 'relative',
+        overflow: 'hidden',
+      }}
     >
-      <defs>
-        <radialGradient id="badgeBg" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#0D2747" stopOpacity="0.08" />
-          <stop offset="100%" stopColor="#0D2747" stopOpacity="0.03" />
-        </radialGradient>
-      </defs>
-      {/* Outer dashed ring */}
-      <circle cx="90" cy="90" r="84" stroke="#0D2747" strokeWidth="1" strokeDasharray="5 5" strokeOpacity="0.2" />
-      {/* Middle solid ring */}
-      <circle cx="90" cy="90" r="70" stroke="#3FB8D6" strokeWidth="1.5" strokeOpacity="0.35" fill="url(#badgeBg)" />
-      {/* Inner accent ring */}
-      <circle cx="90" cy="90" r="54" stroke="#3FB8D6" strokeWidth="1" strokeOpacity="0.2" fill="none" />
-      {/* Decorative dots at cardinal positions */}
-      {[0, 90, 180, 270].map((deg) => {
-        const rad = (deg * Math.PI) / 180;
-        return (
-          <circle
-            key={deg}
-            cx={90 + 70 * Math.cos(rad)}
-            cy={90 - 70 * Math.sin(rad)}
-            r="3"
-            fill="#3FB8D6"
-            fillOpacity="0.5"
-          />
-        );
-      })}
-      {/* Monogram */}
-      <text
-        x="90" y="86"
-        textAnchor="middle"
-        fontFamily="var(--font-display)"
-        fontSize="26"
-        fontWeight="700"
-        fill="#0D2747"
-        fillOpacity="0.82"
-        letterSpacing="4"
-      >
-        AAP
-      </text>
-      <text
-        x="90" y="108"
-        textAnchor="middle"
-        fontFamily="var(--font-sans)"
-        fontSize="7.5"
-        fontWeight="500"
-        fill="#3FB8D6"
-        fillOpacity="0.75"
-        letterSpacing="2.5"
-      >
-        CONSULTORA · PMO
-      </text>
-    </svg>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'radial-gradient(circle at 30% 30%, rgba(63,184,214,0.08) 0%, transparent 70%)',
+          pointerEvents: 'none',
+        }}
+      />
+      <img
+        src="/logo-mark.svg"
+        alt="Ariadina Astori Porto"
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+          position: 'relative',
+          zIndex: 1,
+        }}
+      />
+    </div>
   );
 }
 
@@ -139,7 +117,7 @@ export function About() {
               style={{ display: 'flex', alignItems: 'flex-start', gap: '1.75rem', marginBottom: '1.5rem' }}
             >
               <div style={{ flexShrink: 0 }}>
-                <MonogramBadge />
+                <LogoMarkBadge />
               </div>
               <div>
                 <p style={{

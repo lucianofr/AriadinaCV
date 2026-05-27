@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Briefcase, Shield, Layers, Settings } from 'lucide-react';
+import { Briefcase, Shield, BarChart, Layers, Settings } from 'lucide-react';
 import { SectionTitle } from '../ui/SectionTitle';
 import { SkillBadge } from '../ui/SkillBadge';
 import { useTranslation } from '../../i18n/useTranslation';
@@ -8,6 +8,7 @@ import { resume } from '../../data/resume';
 const categoryIcons = {
   project_management: Briefcase,
   governance: Shield,
+  monitoring: BarChart,
   methodologies: Layers,
   tools: Settings,
 } as const;
@@ -26,6 +27,12 @@ export function Skills() {
       key: 'governance' as const,
       label: t.skills.governance,
       items: resume.skills.governance,
+      accent: false,
+    },
+    {
+      key: 'monitoring' as const,
+      label: t.skills.monitoring,
+      items: resume.skills.monitoring,
       accent: false,
     },
     {

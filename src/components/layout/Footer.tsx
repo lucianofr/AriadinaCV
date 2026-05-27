@@ -35,7 +35,7 @@ export function Footer() {
       >
         <div>
           <img
-            src="/logo-aap-inverse.svg"
+            src="/logo-aap-inverse.png"
             alt={resume.name}
             style={{
               height: '26px',

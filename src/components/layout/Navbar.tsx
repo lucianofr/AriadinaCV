@@ -74,7 +74,7 @@ export function Navbar() {
             }}
           >
             <img
-              src={scrolled ? '/logo-aap.svg' : '/logo-aap-inverse.svg'}
+              src={scrolled ? '/logo-aap.png' : '/logo-aap-inverse.png'}
               alt="Ariadina Astori Porto — Logo"
               style={{
                 height: '30px',
