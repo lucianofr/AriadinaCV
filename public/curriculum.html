@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ariadina Astori Porto — Curriculum Vitae</title>
+  <style>
+    /* Reset styles and defaults */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+      color: #0f172a;
+      background-color: #ffffff;
+      line-height: 1.4;
+      font-size: 12px;
+      padding: 0;
+    }
+    
+    /* Document page configuration */
+    .page {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    /* Print page styling and layout matching the model */
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .page {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        page-break-after: always;
+      }
+      .page:last-child {
+        page-break-after: avoid;
+      }
+    }
+
+    /* Header styling exactly like the model */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+    }
+    .header-left {
+      flex: 1;
+    }
+    .header-right {
+      text-align: right;
+      font-size: 11px;
+      color: #334155;
+      line-height: 1.5;
+    }
+    .name {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0D2747;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+    .links-row {
+      font-size: 11px;
+      color: #475569;
+    }
+    .links-row a {
+      color: #3fb8d6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .links-row a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Bar header styled exactly like the model grey block */
+    .section-header {
+      background-color: #f1f5f9;
+      color: #0D2747;
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 5px 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 14px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
+
+    /* Standard item styles with flex column split left/right */
+    .item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2px;
+    }
+    .item-left {
+      font-weight: 700;
+      color: #0f172a;
+      font-size: 12px;
+    }
+    .item-right {
+      text-align: right;
+      font-weight: 700;
+      color: #475569;
+      font-size: 11px;
+    }
+    .item-sub-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+      font-size: 11px;
+      color: #475569;
+    }
+    .item-sub-left {
+      font-style: normal;
+    }
+    .item-sub-right {
+      text-align: right;
+    }
+
+    /* Bullets styling */
+    .bullet-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 14px;
+      margin-bottom: 4px;
+      font-size: 11.5px;
+      color: #334155;
+      line-height: 1.4;
+    }
+    .bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 3px;
+      top: -1px;
+      color: #3fb8d6;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* Competencies block */
+    .competency-item {
+      margin-bottom: 4px;
+      font-size: 11.5px;
+      color: #334155;
+      line-height: 1.45;
+    }
+    .competency-item strong {
+      color: #0D2747;
+      font-weight: 700;
+    }
+
+    /* Grid layout for cursos/seminarios to fit elegantly */
+    .compact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3px;
+    }
+
+    .cert-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 3px 0;
+      border-bottom: 1px dashed #f1f5f9;
+      font-size: 11px;
+    }
+    .cert-left {
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .cert-left span {
+      font-weight: 400;
+      color: #64748b;
+    }
+    .cert-right {
+      color: #64748b;
+      font-size: 10.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div class="page">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-left">
+        <h1 class="name">Ariadina Astori Porto</h1>
+        <div class="links-row">
+          Linkedin: <a href="https://www.linkedin.com/in/ariadina-astori-porto-bb915338/" target="_blank">/in/ariadina-astori-porto</a> &nbsp;|&nbsp; 
+          Portfólio: <a href="https://ariadina-astori.com.br" target="_blank">ariadina-astori.com.br</a>
+        </div>
+      </div>
+      <div class="header-right">
+        Email: ariadinaas@hotmail.com<br>
+        Celular: +55 (27) 99275-9688<br>
+        Local: Vila Velha, ES — Brasil
+      </div>
+    </div>
+
+    <!-- Section: FORMAÇÃO -->
+    <div class="section-header">Formação</div>
+    
+    <div class="item-row">
+      <div class="item-left">IPOG – Instituto de Pós-Graduação e Graduação</div>
+      <div class="item-right">2020 – 2022</div>
+    </div>
+    <div class="item-sub-row">
+      <div class="item-sub-left">MBA em Gestão de Projetos e Processos</div>
+      <div class="item-sub-right">Uberlândia, MG</div>
+    </div>
+
+    <div class="item-row">
+      <div class="item-left">Universidade Vila Velha (UVV)</div>
+      <div class="item-right">2011 – 2013</div>
+    </div>
+    <div class="item-sub-row">
+      <div class="item-sub-left">Especialização em Gerenciamento de Projetos</div>
+      <div class="item-sub-right">Vila Velha, ES</div>
+    </div>
+
+    <div class="item-row">
+      <div class="item-left">Faculdade Pitágoras</div>
+      <div class="item-right">2006 – 2010</div>
+    </div>
+    <div class="item-sub-row">
+      <div class="item-sub-left">Bacharelado em Administração de Empresas</div>
+      <div class="item-sub-right">Vila Velha, ES</div>
+    </div>
+
+    <!-- Section: RESUMO DE COMPETÊNCIAS -->
+    <div class="section-header">Resumo de Competências</div>
+    
+    <div class="competency-item">
+      <strong>• Gestão de Projetos & PMO:</strong> Planejamento estratégico, coordenação e operação de Escritórios de Projetos (PMO), controle físico-financeiro, elaboração de cronogramas, monitoramento de entregas, identificação de riscos e apoio metodológico à alta liderança.
+    </div>
+    <div class="competency-item">
+      <strong>• Governança, Contratos & Processos:</strong> Gestão de contratos administrativos complexos, processos de contratação e licitações nacionais e internacionais, governança orientada a resultados e mapeamento de normas, procedimentos e fluxos institucionais.
+    </div>
+    <div class="competency-item">
+      <strong>• Projetos Multilaterais (BID):</strong> Especialização na execução e governança de programas de expansão e infraestrutura financiados pelo Banco Interamericano de Desenvolvimento (BID), com domínio pleno das regras de aquisições e diretrizes de compras da instituição.
+    </div>
+    <div class="competency-item">
+      <strong>• Monitoramento & Gestão de Informação:</strong> Consolidação e análise de indicadores de desempenho chaves (KPIs), elaboração de relatórios gerenciais executivos e estruturação de painéis de acompanhamento de metas para suporte à decisão estratégica.
+    </div>
+    <div class="competency-item">
+      <strong>• Metodologias & Ferramentas:</strong> PMBOK, Scrum, Kanban, Metodologias Ágeis, BPM (Business Process Management), Design Thinking. Proficiência em MS Project, SAP / R3P (módulo DMS), Excel Avançado, Power BI, Trello e Planner.
+    </div>
+
+    <!-- Section: EXPERIÊNCIA PROFISSIONAL -->
+    <div class="section-header">Experiência Profissional</div>
+
+    <div class="item-row">
+      <div class="item-left">BANCO INTERAMERICANO DE DESENVOLVIMENTO (BID) | Consultora de Gestão de Projetos</div>
+      <div class="item-right">Jun 2025 – Presente</div>
+    </div>
+    <div class="item-sub-row">
+      <div class="item-sub-left">Organismo Multilateral — atuação na Unidade de Gerenciamento do Programa (UGP-SEJUS / Moderniza-ES)</div>
+      <div class="item-sub-right">Vitória, ES</div>
+    </div>
+    <ul class="bullet-list">
+      <li>Atua de forma estratégica como Consultora Externa no Programa de Ampliação e Modernização do Sistema Prisional do Espírito Santo (Moderniza-ES), iniciativa estruturante com financiamento multilateral do BID.</li>
+      <li>Garante o controle físico-financeiro do programa, o planejamento de metas, o monitoramento contínuo de cronogramas e riscos contratuais, e a consolidação de relatórios executivos gerenciais para a tomada de decisão institucional.</li>
+      <li>Apoia os processos de aquisições de bens e contratações de serviços conduzidos conforme as normas, regras fiduciárias e políticas rígidas estabelecidas pelo BID.</li>
+    </ul>
+
+    <div class="item-row">
+      <div class="item-left">GOVERNO DO ESTADO DO ESPÍRITO SANTO | Coordenadora de Gestão de Projetos</div>
+      <div class="item-right">Dez 2019 – Jul 2025</div>
+    </div>
+    <div class="item-sub-row">
+      <div class="item-sub-left">Gestão Pública — coordenação de programas estratégicos estruturantes (como Estado Presente)</div>
+      <div class="item-sub-right">Vitória, ES</div>
+    </div>
+    <ul class="bullet-list">
+      <li>Coordenou e gerenciou programas públicos financiados pelo BID, garantindo o alinhamento fiduciário, conformidade de escopo, prazo, custo e atendimento de indicadores de progresso focado em resultados sociais.</li>
+      <li>Conduziu a elaboração e monitoramento de planos de trabalho governamentais de grande escala, atuando ativamente na governança, fiscalização técnica e gestão contratual de prestadores administrativos de serviços.</li>
+      <li>Participou diretamente de processos de aquisição pública internacional e comissões especiais de licitações regidas estritamente pelas diretrizes do Banco Interamericano de Desenvolvimento.</li>
+    </ul>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <div class="item-row">
+      <div class="item-left">TRIBUNAL DE CONTAS DO ESTADO DO ESPÍRITO SANTO | Consultora de Finanças Públicas na Governança</div>
+      <div class="item-right">Set 2016 – Dez 2019</div>
+    </div>
+    <div class="item-sub-row">
+      <div class="item-sub-left">Órgão de Controle Externo — atuação no PMO, Planejamento Estratégico e Governança</div>
+      <div class="item-sub-right">Vitória, ES</div>
+    </div>
+    <ul class="bullet-list">
+      <li>Assessorou a operação da Secretaria Geral na estruturação do Escritório de Projetos (PMO), coordenando planos voltados a sistemas institucionais de informação, melhoria física predial e infraestrutura computacional de TI.</li>
+      <li>Modelou, analisou e otimizou fluxos de trabalho administrativos críticos através da notação BPM, garantindo conformidade operacional e eliminando redundâncias de processos.</li>
+      <li>Apoiou e operacionalizou a gestão orçamentária utilizando a metodologia matricial para mitigação de desperdícios corporativos.</li>
+      <li>Facilitou workshops internos com metodologias de Design Thinking para idealização ágil e priorização de projetos e diretrizes estratégicas.</li>
+    </ul>
+
+    <div class="item-row">
+      <div class="item-left">SAMARCO MINERAÇÃO S.A. | Gestão de Engenharia, Projetos & Controle de Documentação Técnica</div>
+      <div class="item-right">Abr 2006 – Set 2016</div>
+    </div>
+    <div class="item-sub-row">
+      <div class="item-sub-left">Mineração — Gerência de Engenharia e Projetos Industriais Complexos</div>
+      <div class="item-sub-right">Anchieta, ES</div>
+    </div>
+    <ul class="bullet-list">
+      <li>Atuou por mais de dez anos no planejamento, monitoramento e apoio administrativo ao portfólio de engenharia técnica voltado à execução de grandes projetos de expansão e manutenção industrial.</li>
+      <li>Responsável pelo controle integrado de documentos de engenharia por meio da plataforma SAP/R3P (módulo DMS), assegurando o controle fiduciário e rastreabilidade total de desenhos técnicos e especificações operacionais.</li>
+      <li>Elaborou e implementou normas operacionais internas de controle de qualidade documental, e ministrou capacitações operacionais técnicas frequentes para fornecedores e equipes terceirizadas de engenharia.</li>
+    </ul>
+
+    <!-- Section: CURSOS & CERTIFICAÇÕES -->
+    <div class="section-header">Cursos & Certificações</div>
+    
+    <div class="compact-grid">
+      <div class="cert-row">
+        <div class="cert-left">Formação de Agentes de Contratação e Equipe de Apoio – Nova Lei Licitatória 14.133 | <span>Governo do Estado</span></div>
+        <div class="cert-right">2024</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Workshop com Ricardo Vargas: Uncertainty Cycle in Project Management | <span>PMI</span></div>
+        <div class="cert-right">2023</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Programa HubGov – Espírito Santo – Design Thinking aplicado ao Setor Público | <span>HubGov</span></div>
+        <div class="cert-right">2019</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">BPM, Transformação Digital, Lean Thinking & Gestão Operacional de Negócios | <span>UFES</span></div>
+        <div class="cert-right">2019</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Planejamento Governamental Teórico de PPA & Pitch de Comunicação Simplificada | <span>ESESP</span></div>
+        <div class="cert-right">2019</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Workshops PMI: Gamification Experience & Liderando Times Híbridos | <span>PMI</span></div>
+        <div class="cert-right">2019</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">SCRUM: Métodos Ágeis de Processos & Meetup.gov: Futurismo Digital | <span>ESESP</span></div>
+        <div class="cert-right">2018</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Workshops PMI: Lego Scrum Game & Gestão de Projetos Ágeis com Office 365 | <span>PMI</span></div>
+        <div class="cert-right">2018</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Oratória Avançada: A Arte de Falar e Convencer em Público – Módulos I e II | <span>TCEES</span></div>
+        <div class="cert-right">2017</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Workshops PMI: PSCanvas, Metodologia Híbrida de Projetos & Gestão de Mudanças | <span>PMI</span></div>
+        <div class="cert-right">2017</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Metodologia de Modelagem e Otimização de Processos de Negócios | <span>UFES</span></div>
+        <div class="cert-right">2017</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Gestão Estratégica e Técnicas Avançadas de Planejamento Orçamentário | <span>DVW São Paulo</span></div>
+        <div class="cert-right">2016</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Treinamento Especialista de SAP – Módulo DMS de Gestão de Documentos | <span>Megawork / Samarco</span></div>
+        <div class="cert-right">2015</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">Pacote Office Avançado (Word, Excel, PowerPoint, Project, Trello, Planner)</div>
+        <div class="cert-right">Avançado</div>
+      </div>
+    </div>
+
+    <!-- Section: SEMINÁRIOS & CONGRESSOS -->
+    <div class="section-header">Seminários & Congressos</div>
+    
+    <div class="compact-grid">
+      <div class="cert-row">
+        <div class="cert-left">Dia das Operações Brasil 2023: Planejamento e Riscos na Prática de Projetos | <span>BID</span></div>
+        <div class="cert-right">2023</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">18º SCGP – Seminário Capixaba de Gestão de Projetos | <span>Vitória – ES</span></div>
+        <div class="cert-right">2023</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">13ª Semana de Segurança Cidadã, Justiça e Inovação Pública | <span>Salvador – BA</span></div>
+        <div class="cert-right">2023</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">5ª Semana de Inovação de Brasília: Governo para as Pessoas | <span>Brasília – DF</span></div>
+        <div class="cert-right">2019</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">II Fórum Brasil GRC – Governança, Riscos e Compliance Corporativo | <span>Vitória – ES</span></div>
+        <div class="cert-right">2019</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">BPM Day: Business Process Management Summit Vitória | <span>Vitória – ES</span></div>
+        <div class="cert-right">2019</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">14º SCGP – Seminário Capixaba de Gerenciamento de Projetos | <span>Vitória – ES</span></div>
+        <div class="cert-right">2018</div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-left">XII Congresso Brasileiro de Gestão, Projetos e Liderança de Equipes | <span>Curitiba – PR</span></div>
+        <div class="cert-right">2017</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
